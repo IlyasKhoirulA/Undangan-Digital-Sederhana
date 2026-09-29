@@ -478,6 +478,9 @@
             const ucapan = item.ucapan || item.Ucapan || "";
             const timestamp = item.timestamp || item.Timestamp || "";
 
+            console.log("DATA:", item);
+            console.log("TIMESTAMP:", timestamp);
+
             const isHadir = kehadiran.toLowerCase().includes("hadir") && !kehadiran.toLowerCase().includes("tidak");
             const badgeColor = isHadir ? "bg-green-100 text-green-700" : "bg-red-100 text-red-700";
 
