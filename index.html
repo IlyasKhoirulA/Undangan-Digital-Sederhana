@@ -499,6 +499,60 @@
       }
     }
 
+    // Fungsi untuk menambahkan ucapan baru ke tampilan secara langsung
+    function tambahUcapanKeTampilan(nama, kehadiran, ucapan) {
+
+      const container = document.getElementById("ucapan-container");
+
+      if (!container) return;
+
+      // Hapus pesan "Belum ada ucapan" jika ada
+      const pesanKosong = container.querySelector("p.text-stone-400");
+
+      if (pesanKosong) {
+        pesanKosong.remove();
+      }
+
+      const isHadir =
+        kehadiran.toLowerCase().includes("hadir") &&
+        !kehadiran.toLowerCase().includes("tidak");
+
+      const badgeColor = isHadir
+        ? "bg-green-100 text-green-700"
+        : "bg-red-100 text-red-700";
+
+      const card = document.createElement("div");
+
+      // Menggunakan desain yang SAMA dengan muatUcapan()
+      card.className =
+        "bg-white p-3 rounded-xl border border-stone-100 shadow-sm text-left mb-2";
+
+      card.innerHTML = `
+        <div class="flex items-center justify-between mb-1">
+
+          <h4 class="font-bold text-stone-800 text-xs">
+            ${escapeHtml(nama)}
+          </h4>
+
+          <span class="text-[9px] px-2 py-0.5 rounded-full font-medium ${badgeColor}">
+            ${escapeHtml(kehadiran)}
+          </span>
+
+        </div>
+
+        <p class="text-stone-600 text-xs mb-1 leading-relaxed">
+          ${escapeHtml(ucapan)}
+        </p>
+
+        <span class="text-[8px] text-stone-400 block">
+          Baru saja
+        </span>
+      `;
+
+      // Masukkan ucapan baru di paling atas
+      container.prepend(card);
+    }
+
     // 8. KIRIM RSVP KE GOOGLE SHEETS
     document.getElementById("rsvp-form").addEventListener("submit", async function (e) {
       e.preventDefault();
@@ -520,7 +574,7 @@
 
         alert("Terima kasih! Ucapan & konfirmasi Anda telah terkirim.");
         document.getElementById("rsvp-form").reset();
-        setTimeout(muatUcapan, 1000);
+        tambahUcapanKeTampilan(nama, kehadiran, ucapan);
       } catch (err) {
         alert("Gagal mengirim ucapan. Silakan coba lagi.");
       } finally {
