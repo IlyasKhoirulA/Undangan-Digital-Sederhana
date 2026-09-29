@@ -155,7 +155,7 @@
             <i class="fas fa-ring"></i>
           </div>
           <h4 class="font-bold text-stone-800 text-base">Akad Nikah</h4>
-          <p class="text-xs text-amber-900 font-semibold">Pukul 09:00 WIB - Selesai</p>
+          <p class="text-xs text-amber-900 font-semibold">Pukul 08:00 WIB - Selesai</p>
           <p class="text-[11px] text-stone-600 pt-1">
             <strong>Lokasi:</strong> Kediaman Mempelai Wanita<br>
             Perum Mutiara Cimerak, Dusun Cikahuripan RT/RW 02/01, Desa Cimerak, Kec. Cimerak
@@ -168,7 +168,7 @@
             <i class="fas fa-glass-cheers"></i>
           </div>
           <h4 class="font-bold text-stone-800 text-base">Resepsi Pernikahan</h4>
-          <p class="text-xs text-amber-900 font-semibold">Pukul 12:00 WIB - Selesai</p>
+          <p class="text-xs text-amber-900 font-semibold">Pukul 09:00 WIB - Selesai</p>
           <p class="text-[11px] text-stone-600 pt-1">
             <strong>Lokasi:</strong> Rumah Kediaman Wanita<br>
             Perum Mutiara Cimerak, Dusun Cikahuripan RT/RW 02/01, Desa Cimerak, Kec. Cimerak
@@ -177,22 +177,62 @@
       </div>
 
       <!-- EMBED GOOGLE MAPS -->
-      <div class="bg-white p-3 rounded-2xl border border-amber-200/80 shadow-sm space-y-3">
-        <h5 class="text-xs font-bold text-stone-700">Peta Lokasi Acara</h5>
-        <div class="w-full h-48 rounded-xl overflow-hidden border border-stone-200">
-          <iframe 
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15818.10301138865!2d108.502081!3d-7.626493!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e65bc485edef505%3A0x501e7f33d262fb0!2sCimerak%2C%20Kec.%20Cimerak%2C%20Kab.%20Pangandaran%2C%20Jawa%20Barat!5e0!3m2!1sid!2sid!4v1700000000000!5m2!1sid!2sid" 
-            width="100%" 
-            height="100%" 
-            style="border:0;" 
-            allowfullscreen="" 
-            loading="lazy" 
-            referrerpolicy="no-referrer-when-downgrade">
+      <div class="bg-white p-4 rounded-2xl border border-amber-200/80 shadow-sm">
+
+        <div class="bg-white p-5 rounded-2xl border border-amber-200/80 shadow-sm text-center space-y-3">
+
+        <!-- Emblem -->
+        <div class="w-10 h-10 bg-amber-100 text-amber-800 rounded-full flex items-center justify-center mx-auto text-base">
+          <i class="fas fa-map-marker-alt"></i>
+        </div>
+
+        <!-- Judul -->
+        <h4 class="font-bold text-stone-800 text-base">
+          Lokasi Acara
+        </h4>
+
+        <!-- Nama Utama Lokasi -->
+        <p class="text-xs text-amber-900 font-semibold">
+          Perumahan Mutiara Cimerak Residence
+        </p>
+
+        <!-- Alamat -->
+        <p class="text-[11px] text-stone-600 leading-relaxed">
+          Dusun Cikahuripan RT/RW 02/01, Desa Cimerak,<br>
+          Kec. Cimerak
+        </p>
+
+        <!-- Peta -->
+        <div class="w-full h-64 sm:h-72 rounded-xl overflow-hidden border border-stone-200 shadow-sm mt-3">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2513.9749838197195!2d108.434263098703!3d-7.76156240704153!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e65bfbcb33c4d4d%3A0xa253b33552fb132d!2sPerumahan%20Mutiara%20Cimerak%20Residence!5e0!3m2!1sen!2sid!4v1790653255941!5m2!1sen!2sid"
+            class="w-full h-full"
+            style="border:0;"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="strict-origin-when-cross-origin">
           </iframe>
         </div>
-        <a href="https://maps.google.com/?q=Perum+Mutiara+Cimerak+Dusun+Cikahuripan+Cimerak" target="_blank" class="inline-flex items-center gap-2 text-xs bg-amber-800 text-white px-4 py-2 rounded-full shadow hover:bg-amber-900 transition">
-          <i class="fas fa-map-marked-alt"></i> Buka di Google Maps
+
+        <!-- Tombol -->
+        <a
+          href="https://maps.google.com/?q=Perum+Mutiara+Cimerak+Dusun+Cikahuripan+Cimerak"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="inline-flex items-center justify-center gap-2
+                text-xs font-semibold
+                bg-amber-800 text-white
+                px-5 py-2.5
+                rounded-full
+                shadow-sm
+                hover:bg-amber-900
+                active:scale-95
+                transition-all duration-200 mt-1">
+
+          <i class="fas fa-map-marked-alt"></i>
+          Buka di Google Maps
         </a>
+
       </div>
     </section>
 
@@ -200,10 +240,10 @@
     <section class="py-8 px-6 text-center bg-white/40">
       <h3 class="font-cursive text-4xl text-amber-900 mb-4">Momen Bahagia</h3>
       <div class="grid grid-cols-2 gap-2">
-        <img src="F&F (1).jpeg" alt="Galeri 1" class="rounded-xl w-full h-36 object-cover shadow-sm">
-        <img src="F&F (2).jpeg" alt="Galeri 2" class="rounded-xl w-full h-36 object-cover shadow-sm">
-        <img src="F&F (3).jpeg" alt="Galeri 3" class="rounded-xl w-full h-36 object-cover shadow-sm">
-        <img src="F&F (4).jpeg" alt="Galeri 4" class="rounded-xl w-full h-36 object-cover shadow-sm">
+        <img src="F&F (2).jpeg" alt="Galeri 2" class="rounded-xl w-full h-auto shadow-sm">
+        <img src="F&F (3).jpeg" alt="Galeri 3" class="rounded-xl w-full h-auto shadow-sm">
+        <img src="F&F (4).jpeg" alt="Galeri 4" class="rounded-xl w-full h-auto shadow-sm">
+        <img src="F&F (1).jpeg" alt="Galeri 1" class="rounded-xl w-full h-auto shadow-sm">
       </div>
     </section>
 
@@ -221,6 +261,17 @@
           <span class="text-[10px] text-stone-400">E-Wallet</span>
         </div>
         <p id="rek-dana" class="font-mono text-base font-bold text-stone-800 tracking-wider">085860342952</p>
+        <p class="text-xs text-stone-600">a.n Fitri Nurhayati</p>
+        <button onclick="copyToClipboard('rek-dana')" class="w-full text-center text-xs bg-amber-50 hover:bg-amber-100 text-amber-900 border border-amber-200 py-1.5 rounded-lg transition font-medium">
+          <i class="far fa-copy mr-1"></i> Salin Nomor DANA
+        </button>
+      </div>
+      <div class="bg-white p-4 rounded-2xl border border-amber-200/80 shadow-sm text-left space-y-2">
+        <div class="flex items-center justify-between">
+          <span class="font-bold text-blue-500 text-sm"><i class="fas fa-wallet mr-1"></i> DANA</span>
+          <span class="text-[10px] text-stone-400">E-Wallet</span>
+        </div>
+        <p id="rek-dana" class="font-mono text-base font-bold text-stone-800 tracking-wider">085218323725</p>
         <p class="text-xs text-stone-600">a.n Miptah Farid</p>
         <button onclick="copyToClipboard('rek-dana')" class="w-full text-center text-xs bg-amber-50 hover:bg-amber-100 text-amber-900 border border-amber-200 py-1.5 rounded-lg transition font-medium">
           <i class="far fa-copy mr-1"></i> Salin Nomor DANA
@@ -228,19 +279,49 @@
       </div>
     </section>
 
-    <!-- TURUT MENGUNDANG -->
+    <!-- DOA UNTUK PENGANTIN -->
     <section class="py-8 px-6 text-center bg-white/60">
-      <h3 class="font-cursive text-3xl text-amber-900 mb-3">Turut Mengundang</h3>
-      <div class="text-xs text-stone-700 space-y-1.5 leading-relaxed">
-        <p class="font-semibold text-amber-900">Keluarga Besar Pesantren Babakan Jamanis Parigi</p>
-        <p class="font-semibold text-amber-900">Keluarga Besar Andra Kids Store</p>
-        <div class="w-8 h-0.5 bg-amber-200 mx-auto my-2"></div>
-        <p>Yosep Dera</p>
-        <p>Usep Deri</p>
-        <p>Novita Saadah</p>
-        <p>Riki Wahyudin</p>
-        <p>Ita Nurmahmudah</p>
-        <p>Pupu Samrotul Puadah</p>
+      <div class="max-w-md mx-auto">
+
+        <div class="w-10 h-10 bg-amber-100 text-amber-800 rounded-full flex items-center justify-center mx-auto mb-3">
+          <i class="fas fa-hands-praying"></i>
+        </div>
+
+        <h3 class="font-cursive text-3xl text-amber-900 mb-3">
+          Doa untuk Kami
+        </h3>
+
+        <p class="text-xs text-stone-700 leading-relaxed">
+          Semoga pernikahan ini menjadi awal dari kehidupan
+          yang penuh cinta, keberkahan, kebahagiaan,
+          dan ketenteraman hingga akhir hayat.
+        </p>
+
+      </div>
+    </section>
+
+    <!-- UCAPAN TERIMA KASIH -->
+    <section class="py-8 px-6 text-center bg-white/60">
+      <div class="max-w-md mx-auto">
+
+        <div class="w-10 h-10 bg-amber-100 text-amber-800 rounded-full flex items-center justify-center mx-auto mb-3">
+          <i class="fas fa-heart"></i>
+        </div>
+
+        <h3 class="font-cursive text-3xl text-amber-900 mb-3">
+          Terima Kasih
+        </h3>
+
+        <p class="text-xs text-stone-700 leading-relaxed">
+          Merupakan suatu kebahagiaan bagi kami apabila
+          Bapak/Ibu/Saudara/i berkenan hadir dan memberikan
+          doa restu untuk pernikahan kami.
+        </p>
+
+        <p class="text-xs text-amber-900 font-semibold mt-3">
+          Sampai jumpa di hari bahagia kami.
+        </p>
+
       </div>
     </section>
 
